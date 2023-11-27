@@ -86,22 +86,38 @@ h4 {
 .companies {
   padding: 80px 50px;
   background: #f1b4bb;
-  height: 800px;
+  height: 900px;
 }
 .companies-logos {
   padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
-
+@media (max-width: 768px) {
+  .companies {
+    height: 600px;
+  }
+  .companies-logos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .work-img {
+    gap: 10px;
+  }
+}
 @media (max-width: 576px) {
   .companies {
-    height: 450px;
+    height: 550px;
   }
   .companies-logos {
     padding: 20px;
