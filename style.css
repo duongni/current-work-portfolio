@@ -1,0 +1,73 @@
+body {
+  background: #fdf0f0;
+  box-sizing: content-box;
+  width: 100%;
+}
+h1 {
+  letter-spacing: 4px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 5em;
+
+  line-height: 1.1em;
+}
+.intro {
+  background-color: #fdf0f0;
+  color: #132043;
+  display: grid;
+  align-items: center;
+  text-align: left;
+  box-sizing: content-box;
+
+  height: 800px;
+  justify-content: center;
+}
+.navbar {
+  background-color: #fdf0f0;
+}
+h3 {
+  font-family: "Staatliches", sans-serif;
+  color: #132043;
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 4px;
+}
+p {
+  font-family: "Space Mono", monospace;
+  color: black;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+h4 {
+  font-family: "Staatliches", sans-serif;
+  color: #1f4172;
+  font-size: 32px;
+  line-height: 1.2em;
+  letter-spacing: 4px;
+}
+.who {
+  background: #f1b4bb;
+}
+.who1 {
+  padding: 80px 50px;
+}
+.grid p {
+  font-family: "Space Mono", monospace;
+  color: black;
+  font-size: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 600px;
+}
+.item1 {
+  grid-column: span 3;
+}
+.my-work {
+  background-color: #fdf0f0;
+  padding: 80px 50px;
+}
+.work-img {
+  padding: 40px 100px;
+}
