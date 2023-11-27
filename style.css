@@ -97,3 +97,18 @@ h4 {
   align-items: center;
   gap: 60px;
 }
+
+@media (max-width: 576px) {
+  .companies-logos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .work-img {
+    gap: 10px;
+  }
+}
