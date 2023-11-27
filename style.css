@@ -46,6 +46,7 @@ h4 {
 }
 .who {
   background: #f1b4bb;
+  height: 500px;
 }
 .who1 {
   padding: 80px 50px;
@@ -62,12 +63,37 @@ h4 {
   max-width: 600px;
 }
 .item1 {
-  grid-column: span 3;
+  grid-column: 1 / span 3;
 }
 .my-work {
   background-color: #fdf0f0;
   padding: 80px 50px;
 }
 .work-img {
-  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-end;
+}
+.pillow {
+  grid-column: 1 / span 2;
+}
+.shoes {
+  grid-column-end: span 2;
+  width: 100%;
+}
+.companies {
+  padding: 80px 50px;
+  background: #f1b4bb;
+  height: 700px;
+}
+.companies-logos {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 60px;
 }
