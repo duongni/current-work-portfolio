@@ -98,15 +98,21 @@ h4 {
   align-items: center;
   gap: 100px;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 1000px) {
+  .work-img {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 576px) {
   .companies {
-    height: 600px;
+    height: 400px;
   }
   .companies-logos {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
     margin: 0 auto;
     align-items: center;
     gap: 30px;
