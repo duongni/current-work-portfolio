@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fdf0f0;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+}
+.flip-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fdf0f0;
+}
+.book {
+  font-family: "Staatliches", sans-serif;
+  transition: transform 0.5s;
+
+  position: relative;
+  width: 652.8px;
+  height: 844.8px;
+  margin: 20px 0 80px;
+}
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+.front,
+.back {
+  background-color: #fdf0f0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 2px solid #fdf0f0;
+}
+.back {
+  z-index: 0;
+}
+.back-content {
+  transform: rotateY(180deg);
+}
+
+/* paper flip */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.fa-solid {
+  margin: 40px;
+  font-size: 24px;
+}
+button:focus {
+  outline: none;
+}
+
+button:hover i {
+  color: #f1b4bb;
+}
+
+#p1 {
+  z-index: 3;
+}
+#p2 {
+  z-index: 2;
+}
+#p3 {
+  z-index: 1;
+}
